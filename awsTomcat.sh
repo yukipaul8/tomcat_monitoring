@@ -63,7 +63,7 @@ else
     # Record the date and time when Tomcat goes down
     DOWN_TIME=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
     CW_LOG_MESSAGE="Tomcat is down at: $DOWN_TIME. Process count: $TOMPROC, Port status: closed. CPU Usage: $CPU_USAGE%, Memory Usage: $MEMORY_USAGE%, Disk Usage: $DISK_USAGE"
-    echo "Tomcat is down at: $DOWN_TIME" >> /opt/awsTomcatMonitoring/logs/tomcat_down.log
+    echo "Tomcat is down at: $DOWN_TIME" >> /opt/tomcat_monitoring/logs/tomcat_down.log
 fi
 
 # Just for testing
